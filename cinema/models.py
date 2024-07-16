@@ -8,7 +8,7 @@ class Movie(models.Model):
     duration = models.IntegerField(validators=[MinValueValidator(1)])
 
     class Meta:
-        ordering = ["title"],
+        ordering = ["title"]
 
     def __str__(self) -> str:
         return self.title
